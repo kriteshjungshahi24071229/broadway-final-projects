@@ -1,0 +1,43 @@
+.breaking-bar {
+  background: #111111;
+  color: #ffffff;
+}
+
+.breaking-container {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.breaking-label {
+  background: #d71920;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.breaking-text {
+  font-size: 13px;
+  color: #dddddd;
+  flex: 1;
+}
+
+.breaking-arrow {
+  color: #d71920;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .breaking-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .breaking-container {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,283 @@
+.about-page {
+  background: #fff;
+  color: #161616;
+}
+
+.about-hero {
+  background: #111;
+  color: #fff;
+  padding: 95px 0;
+}
+
+.about-kicker {
+  display: inline-block;
+  color: #d71920;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  margin: 0 0 28px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  max-width: 720px;
+  color: #d0d0d0;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-story {
+  padding: 90px 0;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-story h2,
+.editorial-section h2,
+.coverage-section h2,
+.accuracy-section h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin: 0 0 25px;
+}
+
+.about-story p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-story-visual {
+  min-height: 420px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    linear-gradient(135deg, #444, #111);
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-story-visual::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  top: 40px;
+  right: 40px;
+}
+
+.visual-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.visual-content span {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.visual-content strong {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+
+.visual-content small {
+  display: block;
+  color: #ccc;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+.editorial-section {
+  background: #f5f5f5;
+  padding: 90px 0;
+}
+
+.section-heading {
+  margin-bottom: 45px;
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #ccc;
+}
+
+.editorial-grid article {
+  padding: 30px 25px 20px;
+  border-right: 1px solid #ccc;
+}
+
+.editorial-grid article:last-child {
+  border-right: none;
+}
+
+.principle-number {
+  color: #d71920;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.editorial-grid h3 {
+  font-size: 1.35rem;
+  margin: 18px 0 12px;
+}
+
+.editorial-grid p {
+  color: #666;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.coverage-section {
+  padding: 90px 0;
+}
+
+.coverage-list {
+  border-top: 1px solid #222;
+}
+
+.coverage-list a {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.coverage-list strong {
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+}
+
+.coverage-list span {
+  color: #666;
+}
+
+.accuracy-section {
+  padding: 0 0 90px;
+}
+
+.accuracy-box {
+  background: #111;
+  color: white;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.accuracy-box h2 {
+  margin-bottom: 0;
+}
+
+.accuracy-box p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-final {
+  background: #d71920;
+  color: white;
+  padding: 75px 0;
+}
+
+.about-final .about-kicker {
+  color: white;
+}
+
+.about-final h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 0 0 15px;
+  letter-spacing: -1.5px;
+}
+
+.about-final p {
+  margin: 0;
+  color: #ffe7e7;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .editorial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .editorial-grid article:nth-child(2) {
+    border-right: none;
+  }
+
+  .editorial-grid article:nth-child(3),
+  .editorial-grid article:nth-child(4) {
+    border-top: 1px solid #ccc;
+  }
+
+  .accuracy-box {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 65px 0;
+  }
+
+  .about-story,
+  .editorial-section,
+  .coverage-section {
+    padding: 65px 0;
+  }
+
+  .about-story-visual {
+    min-height: 300px;
+  }
+
+  .editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-grid article {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .coverage-list a {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .accuracy-box {
+    padding: 35px 25px;
+  }
+}

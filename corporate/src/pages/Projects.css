@@ -1,0 +1,334 @@
+/* ================================
+   PROJECTS PAGE
+================================ */
+
+.projects-page {
+  background: #05080d;
+  color: #ffffff;
+  padding-top: 80px;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.projects-hero {
+  padding: 140px 8% 120px;
+  border-bottom: 1px solid #202832;
+}
+
+.projects-hero h1 {
+  font-size: clamp(60px, 7vw, 105px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+}
+
+.projects-hero h1 span {
+  color: #00e5ff;
+}
+
+.projects-hero-text {
+  max-width: 600px;
+  margin-top: 35px;
+
+  color: #8b97a5;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   PROJECT LIST
+================================ */
+
+.projects-list {
+  padding: 100px 8%;
+}
+
+.project-case {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+  gap: 40px;
+
+  padding: 70px 0;
+
+  border-bottom: 1px solid #26303b;
+}
+
+.project-number {
+  color: #536171;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+
+/* ================================
+   PROJECT IMAGE
+================================ */
+
+.project-visual {
+  height: 430px;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #080d13;
+  border: 1px solid #26303b;
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  filter: grayscale(25%);
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.project-case:hover .project-visual img {
+  transform: scale(1.04);
+  filter: grayscale(0%);
+}
+
+
+/* IMAGE LABEL */
+
+.project-visual-label {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  padding: 8px 12px;
+
+  background: rgba(5, 8, 13, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #ffffff;
+
+  font-size: 9px;
+  letter-spacing: 2px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* ================================
+   PROJECT CONTENT
+================================ */
+
+.project-case-content {
+  align-self: center;
+  padding-right: 50px;
+}
+
+.project-category {
+  color: #00e5ff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.project-case-content h2 {
+  margin-top: 20px;
+
+  font-size: clamp(45px, 5vw, 75px);
+
+  letter-spacing: -4px;
+}
+
+.project-description {
+  max-width: 500px;
+
+  margin-top: 25px;
+
+  color: #8b97a5;
+
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.project-tech {
+  margin-top: 25px;
+
+  color: #566575;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+/* ================================
+   CASE STUDY BUTTON
+================================ */
+
+.project-link {
+  margin-top: 35px;
+
+  padding: 14px 22px;
+
+  border: 1px solid #35414e;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.project-link:hover {
+  background: #00e5ff;
+  border-color: #00e5ff;
+  color: #05080d;
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.projects-cta {
+  padding: 150px 8%;
+
+  text-align: center;
+
+  background: #00e5ff;
+  color: #05080d;
+}
+
+.projects-cta .page-label {
+  color: #16424b;
+}
+
+.projects-cta h2 {
+  font-size: clamp(55px, 7vw, 100px);
+
+  line-height: 0.95;
+  letter-spacing: -5px;
+
+  margin-bottom: 45px;
+}
+
+.projects-cta h2 span {
+  color: #ffffff;
+}
+
+.projects-cta a {
+  display: inline-block;
+
+  padding: 17px 30px;
+
+  background: #05080d;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.projects-cta a:hover {
+  background: #ffffff;
+  color: #05080d;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .project-case {
+    grid-template-columns: 40px 1fr;
+    gap: 25px;
+  }
+
+  .project-visual {
+    grid-column: 2;
+  }
+
+  .project-case-content {
+    grid-column: 2;
+    padding-right: 0;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .projects-hero,
+  .projects-list,
+  .projects-cta {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .projects-hero {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .projects-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .project-case {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 50px 0;
+  }
+
+  .project-number {
+    padding-top: 0;
+  }
+
+  .project-visual {
+    grid-column: auto;
+
+    height: 300px;
+  }
+
+  .project-case-content {
+    grid-column: auto;
+
+    padding-right: 0;
+  }
+
+  .project-case-content h2 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .projects-cta {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+}

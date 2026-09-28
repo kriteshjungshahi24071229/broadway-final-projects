@@ -1,0 +1,91 @@
+.about-story {
+  padding: 110px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.about-grid h2 {
+  font-size: 48px;
+  line-height: 1.05;
+  margin-top: 18px;
+}
+
+.about-grid p {
+  color: #65727a;
+  line-height: 1.9;
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+.values-section {
+  background: #f4f6f5;
+  padding: 100px 0;
+}
+
+.values-heading h2 {
+  font-size: 45px;
+  margin-top: 18px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.values-grid article {
+  background: #ffffff;
+  padding: 35px;
+}
+
+.values-grid strong {
+  color: #e47a32;
+  font-size: 14px;
+}
+
+.values-grid h3 {
+  font-size: 26px;
+  margin: 18px 0 12px;
+}
+
+.values-grid p {
+  color: #68757d;
+  line-height: 1.7;
+}
+
+.about-cta {
+  background: #17212b;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.about-cta h2 {
+  font-size: 55px;
+  max-width: 700px;
+  margin: 18px 0 30px;
+}
+
+@media (max-width: 750px) {
+  .about-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    gap: 40px;
+  }
+
+  .about-grid h2,
+  .values-heading h2 {
+    font-size: 38px;
+  }
+
+  .about-cta h2 {
+    font-size: 40px;
+  }
+}

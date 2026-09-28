@@ -1,0 +1,62 @@
+.travel-footer {
+  background: #111a21;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.footer-grid {
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 60px;
+}
+
+.footer-logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.footer-logo span {
+  display: block;
+  color: #e47a32;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+.footer-grid p {
+  color: #aeb8bf;
+  line-height: 1.7;
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+.footer-grid h3 {
+  margin-bottom: 20px;
+}
+
+.footer-grid a {
+  display: block;
+  text-decoration: none;
+  color: #aeb8bf;
+  margin-bottom: 13px;
+}
+
+.footer-grid a:hover {
+  color: #e47a32;
+}
+
+.footer-bottom {
+  border-top: 1px solid #29343c;
+  padding: 22px 0;
+  color: #8e999f;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
